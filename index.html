@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
@@ -136,6 +135,10 @@
     .group:hover .img-zoom {
       transform: scale(1.08);
     }
+
+    video {
+      background: #000;
+    }
   </style>
 </head>
 <body class="bg-black text-white antialiased overflow-x-hidden">
@@ -143,15 +146,16 @@
   <!-- Navbar -->
   <header class="sticky top-0 z-50 bg-black/95 backdrop-blur-md border-b border-white/10">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-16 md:h-[72px]">
-        <a href="#" class="flex items-center gap-2.5">
-          <div class="w-9 h-9 rounded-full border-2 border-white flex items-center justify-center">
-            <span class="font-display font-bold text-white text-sm">J</span>
-          </div>
-          <span class="font-display font-bold text-lg text-white tracking-wide">Jacked Fitness Center</span>
+      <div class="relative flex items-center justify-between h-16 md:h-[72px]">
+        
+        <!-- Logo -->
+        <a href="#" class="flex items-center gap-2.5 z-10">
+          <img src="Jackeditnesscentre.png" alt="Jacked Fitness Center Logo" class="h-9 md:h-11 w-auto object-contain" />
+          <span class="font-display font-bold text-base md:text-lg text-white tracking-wide">Jacked Fitness Center</span>
         </a>
 
-        <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-white/90">
+        <!-- Desktop Nav - Centered -->
+        <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-white/90 absolute left-1/2 -translate-x-1/2">
           <a href="#home" class="hover:text-white transition">Home</a>
           <a href="#about" class="hover:text-white transition">About</a>
           <a href="#programs" class="hover:text-white transition">Programs</a>
@@ -159,13 +163,14 @@
           <a href="#gallery" class="hover:text-white transition">Gallery</a>
         </nav>
 
+        <!-- Desktop CTA -->
         <a href="#contact" 
-           class="hidden md:inline-flex items-center bg-white hover:bg-white/90 text-black font-semibold px-5 py-2.5 rounded-full text-sm btn-primary">
+           class="hidden md:inline-flex items-center bg-white hover:bg-white/90 text-black font-semibold px-5 py-2.5 rounded-full text-sm btn-primary z-10">
           Join Now
         </a>
 
         <!-- Mobile menu button -->
-        <button id="menuBtn" class="md:hidden p-2 text-white/90 hover:text-white relative w-10 h-10" aria-label="Menu">
+        <button id="menuBtn" class="md:hidden p-2 text-white/90 hover:text-white relative w-10 h-10 z-10" aria-label="Menu">
           <svg id="iconOpen" class="w-6 h-6 absolute inset-0 m-auto transition" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
           </svg>
@@ -255,25 +260,27 @@
         <div class="bg-dark-900 border border-white/10 rounded-xl p-6 card-hover reveal reveal-delay-1">
           <div class="flex items-center gap-1 text-white mb-4 text-sm tracking-widest">★★★★★</div>
           <p class="text-white/80 text-sm leading-relaxed mb-5">
-            “Best gym in Bikaner. Fully AC, top-quality machines, and trainers who actually care about your form and progress.”
+            Bohot bhadiya gym h. Best part of the gym every member of gym helps with the exercises. Great cardio area and the best gym I have ever visited. Every machine is like new. And the coach 'jonny bhaiya' ia a great guy”
           </p>
-          <footer class="text-sm font-semibold text-white">Google Reviewer</footer>
+          <footer class="text-sm font-semibold text-white">Harshvardhan singh Singh</footer>
         </div>
 
         <div class="bg-dark-900 border border-white/10 rounded-xl p-6 card-hover reveal reveal-delay-2">
           <div class="flex items-center gap-1 text-white mb-4 text-sm tracking-widest">★★★★★</div>
           <p class="text-white/80 text-sm leading-relaxed mb-5">
-            “First unisex MMA gym here and it shows. Great combat training + solid bodybuilding setup. Highly recommend.”
+This Gym is well equipped with all the basic machines and have a clean space to workout. Owner of this Gym (Jitendra bhaiya) is also very kind and helpful. He will guide you very patiently. ☆☆☆☆☆
           </p>
-          <footer class="text-sm font-semibold text-white">Google Reviewer</footer>
+          <footer class="text-sm font-semibold text-white">Kumkum Swami</footer>
         </div>
 
         <div class="bg-dark-900 border border-white/10 rounded-xl p-6 card-hover reveal reveal-delay-3">
           <div class="flex items-center gap-1 text-white mb-4 text-sm tracking-widest">★★★★★</div>
           <p class="text-white/80 text-sm leading-relaxed mb-5">
-            “Spacious, well-maintained equipment, and positive environment. Perfect place if you’re serious about training.”
+​I had a fantastic first week here and have already lost 2 kg. The trainers are incredibly supportive and make sure you learn the correct form for every exercise. On top of that, the personalized diet plan they gave me is highly effective and easy to follow. Super happy with my decision to join!
           </p>
-          <footer class="text-sm font-semibold text-white">Google Reviewer</footer>
+          <footer class="text-sm font-semibold text-white">
+
+Shefali Rajpurohit</footer>
         </div>
       </div>
     </div>
@@ -357,7 +364,7 @@
         
         <div class="relative order-2 lg:order-1 reveal">
           <div class="aspect-[4/5] overflow-hidden rounded-2xl border border-white/10">
-            <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=900&q=80" 
+            <img src="jitendrarathore.png" 
                  alt="Jitendra Rathore - Owner of Jacked Fitness Center" 
                  class="w-full h-full object-cover" />
           </div>
@@ -438,7 +445,7 @@
 
         <a href="#contact" class="group bg-dark-900 border border-white/10 rounded-2xl overflow-hidden card-hover reveal reveal-delay-1">
           <div class="aspect-[16/10] overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=900&q=80" 
+            <img src="https://images.unsplash.com/photo-1599058917212-d750089bc07e?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" 
                  alt="CrossFit" class="w-full h-full object-cover img-zoom" />
           </div>
           <div class="p-6">
@@ -490,7 +497,7 @@
 
         <a href="#contact" class="group bg-dark-900 border border-white/10 rounded-2xl overflow-hidden card-hover reveal reveal-delay-1">
           <div class="aspect-[16/10] overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&w=900&q=80" 
+            <img src="https://plus.unsplash.com/premium_photo-1716312743010-d90ca0fbb69b?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" 
                  alt="Weight Loss" class="w-full h-full object-cover img-zoom" />
           </div>
           <div class="p-6">
@@ -501,6 +508,91 @@
           </div>
         </a>
 
+      </div>
+    </div>
+  </section>
+
+  <!-- Transformations Section -->
+  <section id="transformations" class="py-20 md:py-28 bg-dark-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-14">
+        <h2 class="font-display font-bold text-3xl md:text-4xl lg:text-5xl text-white uppercase tracking-wide mb-4 reveal">
+          Real Transformations
+        </h2>
+        <p class="text-white/80 text-base md:text-lg max-w-xl mx-auto reveal reveal-delay-1">
+          Proof that consistent training + the right guidance delivers results.
+        </p>
+      </div>
+
+      <div class="max-w-5xl mx-auto reveal">
+        <div class="rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
+          <img src="transformation.png" 
+               alt="Member transformations at Jacked Fitness Center" 
+               class="w-full h-auto object-cover" />
+        </div>
+        <p class="text-center text-white/60 text-sm mt-6">
+          Before & After results from members who trained at Jacked Fitness Center
+        </p>
+      </div>
+
+      <div class="text-center mt-12 reveal reveal-delay-2">
+        <a href="https://wa.me/918118870640?text=Hi%20Jacked%20Fitness%2C%20I%20want%20to%20start%20my%20transformation." 
+           target="_blank" rel="noopener"
+           class="inline-flex items-center gap-2 bg-white hover:bg-white/90 text-black font-bold px-8 py-4 rounded-full text-base btn-primary">
+          Start Your Transformation
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gym Trailers / Videos Section -->
+  <section id="trailers" class="py-20 md:py-28 bg-black">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-14">
+        <h2 class="font-display font-bold text-3xl md:text-4xl lg:text-5xl text-white uppercase tracking-wide mb-4 reveal">
+          Gym Trailers
+        </h2>
+        <p class="text-white/80 text-base md:text-lg max-w-xl mx-auto reveal reveal-delay-1">
+          Experience the energy, the intensity, and the atmosphere inside Jacked.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Trailer 1 -->
+        <div class="reveal">
+          <div class="rounded-2xl overflow-hidden border border-white/10 bg-dark-900">
+            <video 
+              controls 
+              playsinline
+              preload="metadata"
+              class="w-full aspect-video object-cover"
+              poster="">
+              <source src="JACKED.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <p class="mt-4 text-center font-display font-semibold text-white uppercase tracking-wide">
+            Official Gym Trailer
+          </p>
+        </div>
+
+        <!-- Trailer 2 -->
+        <div class="reveal reveal-delay-1">
+          <div class="rounded-2xl overflow-hidden border border-white/10 bg-dark-900">
+            <video 
+              controls 
+              playsinline
+              preload="metadata"
+              class="w-full aspect-video object-cover"
+              poster="">
+              <source src="trailer2.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <p class="mt-4 text-center font-display font-semibold text-white uppercase tracking-wide">
+            Inside the Gym
+          </p>
+        </div>
       </div>
     </div>
   </section>
@@ -676,7 +768,7 @@
 
         <div class="relative reveal reveal-delay-1">
           <div class="aspect-[4/5] overflow-hidden rounded-2xl border border-white/10">
-            <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&w=900&q=80" 
+            <img src="jitendrarathore.png" 
                  alt="Personal Training at Jacked Fitness" 
                  class="w-full h-full object-cover" />
           </div>
@@ -686,66 +778,68 @@
     </div>
   </section>
 
-  <!-- Gallery -->
+  <!-- Gallery - Updated with facility images -->
   <section id="gallery" class="pt-12 pb-16 md:pt-16 md:pb-20 bg-black overflow-hidden">
     <div class="text-center mb-10 px-4">
       <h2 class="font-display font-bold text-3xl md:text-4xl text-white uppercase tracking-wide mb-3 reveal">Inside Jacked</h2>
       <p class="text-white/80 max-w-xl mx-auto text-sm md:text-base reveal reveal-delay-1">A space built to perform. Two floors. Zero compromise.</p>
     </div>
 
+    <!-- Row 1 -->
     <div class="flex gap-3 mb-3 w-max animate-scroll-left">
-      <div class="w-[70vw] md:w-[32vw] aspect-[16/10] flex-shrink-0 overflow-hidden">
-        <img src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&w=900&q=80" alt="Gym" class="w-full h-full object-cover" />
+      <div class="w-[70vw] md:w-[32vw] aspect-[16/10] flex-shrink-0 overflow-hidden rounded-lg">
+        <img src="facility.png" alt="Jacked Fitness facility" class="w-full h-full object-cover" />
       </div>
-      <div class="w-[70vw] md:w-[32vw] aspect-[16/10] flex-shrink-0 overflow-hidden">
-        <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=900&q=80" alt="Gym" class="w-full h-full object-cover" />
+      <div class="w-[70vw] md:w-[32vw] aspect-[16/10] flex-shrink-0 overflow-hidden rounded-lg">
+        <img src="facility2.png" alt="Jacked Fitness facility" class="w-full h-full object-cover" />
       </div>
-      <div class="w-[70vw] md:w-[32vw] aspect-[16/10] flex-shrink-0 overflow-hidden">
-        <img src="https://images.unsplash.com/photo-1576678927484-cc907957088c?auto=format&fit=crop&w=900&q=80" alt="Gym" class="w-full h-full object-cover" />
+      <div class="w-[70vw] md:w-[32vw] aspect-[16/10] flex-shrink-0 overflow-hidden rounded-lg">
+        <img src="facility3.png" alt="Jacked Fitness facility" class="w-full h-full object-cover" />
       </div>
-      <div class="w-[70vw] md:w-[32vw] aspect-[16/10] flex-shrink-0 overflow-hidden">
-        <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=900&q=80" alt="Gym" class="w-full h-full object-cover" />
+      <div class="w-[70vw] md:w-[32vw] aspect-[16/10] flex-shrink-0 overflow-hidden rounded-lg">
+        <img src="facility4.png" alt="Jacked Fitness facility" class="w-full h-full object-cover" />
       </div>
-      <!-- duplicate -->
-      <div class="w-[70vw] md:w-[32vw] aspect-[16/10] flex-shrink-0 overflow-hidden">
-        <img src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&w=900&q=80" alt="Gym" class="w-full h-full object-cover" />
+      <!-- duplicate for seamless loop -->
+      <div class="w-[70vw] md:w-[32vw] aspect-[16/10] flex-shrink-0 overflow-hidden rounded-lg">
+        <img src="facility.png" alt="Jacked Fitness facility" class="w-full h-full object-cover" />
       </div>
-      <div class="w-[70vw] md:w-[32vw] aspect-[16/10] flex-shrink-0 overflow-hidden">
-        <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=900&q=80" alt="Gym" class="w-full h-full object-cover" />
+      <div class="w-[70vw] md:w-[32vw] aspect-[16/10] flex-shrink-0 overflow-hidden rounded-lg">
+        <img src="facility2.png" alt="Jacked Fitness facility" class="w-full h-full object-cover" />
       </div>
-      <div class="w-[70vw] md:w-[32vw] aspect-[16/10] flex-shrink-0 overflow-hidden">
-        <img src="https://images.unsplash.com/photo-1576678927484-cc907957088c?auto=format&fit=crop&w=900&q=80" alt="Gym" class="w-full h-full object-cover" />
+      <div class="w-[70vw] md:w-[32vw] aspect-[16/10] flex-shrink-0 overflow-hidden rounded-lg">
+        <img src="facility3.png" alt="Jacked Fitness facility" class="w-full h-full object-cover" />
       </div>
-      <div class="w-[70vw] md:w-[32vw] aspect-[16/10] flex-shrink-0 overflow-hidden">
-        <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=900&q=80" alt="Gym" class="w-full h-full object-cover" />
+      <div class="w-[70vw] md:w-[32vw] aspect-[16/10] flex-shrink-0 overflow-hidden rounded-lg">
+        <img src="facility4.png" alt="Jacked Fitness facility" class="w-full h-full object-cover" />
       </div>
     </div>
 
+    <!-- Row 2 -->
     <div class="flex gap-3 w-max animate-scroll-right">
-      <div class="w-[70vw] md:w-[32vw] aspect-[16/10] flex-shrink-0 overflow-hidden">
-        <img src="https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?auto=format&fit=crop&w=900&q=80" alt="MMA" class="w-full h-full object-cover" />
+      <div class="w-[70vw] md:w-[32vw] aspect-[16/10] flex-shrink-0 overflow-hidden rounded-lg">
+        <img src="facility5.png" alt="Jacked Fitness facility" class="w-full h-full object-cover" />
       </div>
-      <div class="w-[70vw] md:w-[32vw] aspect-[16/10] flex-shrink-0 overflow-hidden">
-        <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=900&q=80" alt="Gym" class="w-full h-full object-cover" />
+      <div class="w-[70vw] md:w-[32vw] aspect-[16/10] flex-shrink-0 overflow-hidden rounded-lg">
+        <img src="facility6.png" alt="Jacked Fitness facility" class="w-full h-full object-cover" />
       </div>
-      <div class="w-[70vw] md:w-[32vw] aspect-[16/10] flex-shrink-0 overflow-hidden">
-        <img src="https://images.unsplash.com/photo-1599058917212-d750089bc07e?auto=format&fit=crop&w=900&q=80" alt="Gym" class="w-full h-full object-cover" />
+      <div class="w-[70vw] md:w-[32vw] aspect-[16/10] flex-shrink-0 overflow-hidden rounded-lg">
+        <img src="facility7.png" alt="Jacked Fitness facility" class="w-full h-full object-cover" />
       </div>
-      <div class="w-[70vw] md:w-[32vw] aspect-[16/10] flex-shrink-0 overflow-hidden">
-        <img src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1?auto=format&fit=crop&w=900&q=80" alt="Gym" class="w-full h-full object-cover" />
+      <div class="w-[70vw] md:w-[32vw] aspect-[16/10] flex-shrink-0 overflow-hidden rounded-lg">
+        <img src="facility.png" alt="Jacked Fitness facility" class="w-full h-full object-cover" />
       </div>
-      <!-- duplicate -->
-      <div class="w-[70vw] md:w-[32vw] aspect-[16/10] flex-shrink-0 overflow-hidden">
-        <img src="https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?auto=format&fit=crop&w=900&q=80" alt="MMA" class="w-full h-full object-cover" />
+      <!-- duplicate for seamless loop -->
+      <div class="w-[70vw] md:w-[32vw] aspect-[16/10] flex-shrink-0 overflow-hidden rounded-lg">
+        <img src="facility5.png" alt="Jacked Fitness facility" class="w-full h-full object-cover" />
       </div>
-      <div class="w-[70vw] md:w-[32vw] aspect-[16/10] flex-shrink-0 overflow-hidden">
-        <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=900&q=80" alt="Gym" class="w-full h-full object-cover" />
+      <div class="w-[70vw] md:w-[32vw] aspect-[16/10] flex-shrink-0 overflow-hidden rounded-lg">
+        <img src="facility6.png" alt="Jacked Fitness facility" class="w-full h-full object-cover" />
       </div>
-      <div class="w-[70vw] md:w-[32vw] aspect-[16/10] flex-shrink-0 overflow-hidden">
-        <img src="https://images.unsplash.com/photo-1599058917212-d750089bc07e?auto=format&fit=crop&w=900&q=80" alt="Gym" class="w-full h-full object-cover" />
+      <div class="w-[70vw] md:w-[32vw] aspect-[16/10] flex-shrink-0 overflow-hidden rounded-lg">
+        <img src="facility7.png" alt="Jacked Fitness facility" class="w-full h-full object-cover" />
       </div>
-      <div class="w-[70vw] md:w-[32vw] aspect-[16/10] flex-shrink-0 overflow-hidden">
-        <img src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1?auto=format&fit=crop&w=900&q=80" alt="Gym" class="w-full h-full object-cover" />
+      <div class="w-[70vw] md:w-[32vw] aspect-[16/10] flex-shrink-0 overflow-hidden rounded-lg">
+        <img src="facility.png" alt="Jacked Fitness facility" class="w-full h-full object-cover" />
       </div>
     </div>
   </section>
@@ -899,11 +993,9 @@
                         class="w-full bg-black border border-white/15 rounded-lg px-4 py-3 text-white placeholder-white/30 focus:outline-none focus:border-white transition resize-none"></textarea>
             </div>
             <button type="submit"
-                    class="w-full inline-flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold py-3.5 rounded-full text-sm uppercase tracking-wide transition hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-[#25D366]/40">
-              <svg class="w-5 h-5 shrink-0" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-              Send on WhatsApp
+                    class="w-full bg-white hover:bg-white/90 text-black font-bold py-3.5 rounded-full btn-primary text-sm uppercase tracking-wide">
+              Send Enquiry
             </button>
-            <p class="text-center text-xs text-white/40">Opens WhatsApp with your details ready to send.</p>
           </form>
         </div>
       </div>
@@ -931,9 +1023,7 @@
         
         <div class="col-span-2 md:col-span-1">
           <div class="flex items-center gap-2.5 mb-4">
-            <div class="w-8 h-8 rounded-full border-2 border-white flex items-center justify-center">
-              <span class="font-display font-bold text-white text-xs">J</span>
-            </div>
+            <img src="Jackeditnesscentre.png" alt="Jacked Fitness Center" class="h-9 w-auto object-contain" />
             <span class="font-display text-white font-bold tracking-wide">Jacked Fitness Center</span>
           </div>
           <p class="text-white/50 text-sm leading-relaxed">
@@ -987,6 +1077,12 @@
 
       <div class="border-t border-white/10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-white/40">
         <p>© <span id="year"></span> Jacked Fitness Center. All rights reserved.</p>
+        <p class="text-center">
+          Built by 
+          <a href="https://in.stellarwebstudio.com" target="_blank" rel="noopener" class="text-white/60 hover:text-white transition underline underline-offset-2">
+            in.stellarwebstudio.com
+          </a>
+        </p>
         <p>First unisex MMA Gym in Bikaner</p>
       </div>
     </div>
@@ -1046,23 +1142,11 @@
       const phone = this.phone.value.trim();
       const membership = this.membership.value;
       const message = this.message.value.trim();
-
-      if (!name || !phone || !membership) {
-        alert('Please fill in your name, phone, and what you are interested in.');
-        return;
-      }
-
-      let text = 'Hi Jacked Fitness! 👋\n\n';
-      text += 'Name: ' + name + '\n';
-      text += 'Phone: ' + phone + '\n';
-      text += 'Interested in: ' + membership + '\n';
-      if (message) {
-        text += '\nMessage:\n' + message + '\n';
-      }
-      text += '\n(From the website form)';
-
-      const url = 'https://wa.me/918118870640?text=' + encodeURIComponent(text);
-      window.open(url, '_blank', 'noopener,noreferrer');
+      
+      let text = `Hi Jacked Fitness,%0A%0AName: ${name}%0APhone: ${phone}%0AInterested in: ${membership}`;
+      if (message) text += `%0AMessage: ${message}`;
+      
+      window.open(`https://wa.me/918118870640?text=${text}`, '_blank');
     });
   </script>
 </body>
